@@ -11,7 +11,7 @@ from airtable import add_task_to_airtable
 def parse_task_command(message):
     """
     Example command:
-    /Task Task-Title | 2025-07-01 | John Doe | https://link-to-attachment.com/file.png
+    /Task Task-Title | 2025-07-01 | Reddy | https://link-to-attachment.com/file.png
     """
     pattern = r"Task\s+(.+?)\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(.+?)\s*\|\s*(\S+)"
     match = re.match(pattern, message)
